@@ -6,10 +6,11 @@ const palindromes = function (str) {
         if(index < Math.floor(filtered.length / 2 )) {
             return char == filtered[filtered.length - 1 - index];
         } else {
-            return true;
+            return true;  // no need to check again if we're past midway
         }
     })
 }
+
 
 // Do not edit below this line
 module.exports = palindromes;
